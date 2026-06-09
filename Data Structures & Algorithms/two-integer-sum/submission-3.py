@@ -1,0 +1,18 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        n = []
+        for i in range(len(nums)) :
+            for j in range(i+1 ,len(nums)) :
+                if nums[i] + nums[j] == target :
+                    n.append(i)
+                    n.append(j)
+                    return n
+                    break
+                else : 
+                    print("no match")
+            
+        
+nums = [5,5]
+target = 10
+sol = Solution()
+sol.twoSum(nums,target)
